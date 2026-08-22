@@ -1,0 +1,19 @@
+.container0
+{
+    margin-top: 7%;
+    background-color: black;
+    width: 100%;
+    color: #d3d3ff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+.container0 p
+{
+    background: none;
+    font-size: 8px;
+    width: 110px;
+}
+.container0 ul {list-style: none;font-size: 10px;}
+.container0 ul li{margin: 6px;}
+

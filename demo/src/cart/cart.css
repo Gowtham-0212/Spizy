@@ -1,0 +1,106 @@
+#card
+{
+    box-shadow: 1px 1px 10px black;
+    width: 240px;
+    height: 330px;
+    border-radius: 0px; 
+    background-color: #d3d3ff; 
+    overflow: hidden;
+    border-radius: 7px;
+}
+#card img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 220px;
+    display: block;
+}
+.inc{
+    padding: 1px 9px;
+    color: #000000;
+    cursor: pointer;
+    display: inline;
+    /* -webkit-text-stroke: 1px black; */
+    background-color: green;
+    margin: 5px 15px;
+    border-radius: 50%;
+}
+.dec{
+    padding: 1px 9px;
+    display: inline;
+    cursor: pointer;
+    background-color: red;
+    /* -webkit-text-stroke: 1px black; */
+    margin: 0px 15px;
+    border-radius: 50%;
+   
+}
+
+#details h2,p
+{
+    text-align:start;
+    background-color: #d3d3ff; 
+    padding-left: 15px;
+}
+#details{
+    background-color: #d3d3ff; 
+    position: relative;
+}
+#container
+{
+    display:flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin: 4%;
+    padding: 10vh 0px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+#empty
+{
+    margin: 18%;
+    text-align: center;
+    background-color: #232323;
+    color: #d3d3ff;
+}
+#bill-wrap
+{
+    width: 100%;
+    background-color: #a2a2cf;
+    border-radius: 10px;
+    padding: 6% 0%;
+    text-align: center;
+    margin-top: 7%;
+}
+#bill
+{
+    padding: 8px;
+    background-color: #9400d3;
+    color: #d3d3ff;
+    border-radius: 8px;
+    border: 3px solid white;
+    font-family: 'poppins';
+    font-weight: bold;
+    margin: 3% 0px;
+}
+#bill:hover
+{
+    padding: 8px;
+    background-color: #d3d3ff;
+    color: #9400d3;
+    border-radius: 8px;
+    border: 3px solid #9400d3;
+    font-family: 'poppins';
+}
+#cart-txt
+{
+    color: #d3d3ff;
+}
+
+#bill-wrap td,
+#bill-wrap th {
+    padding: 1px 20px;
+}
+table td{
+    border-top: 1px solid #000000;
+}

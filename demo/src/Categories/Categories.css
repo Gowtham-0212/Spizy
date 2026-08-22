@@ -1,0 +1,27 @@
+.category-container
+{
+   
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 8% 5% ;
+    padding: 0px 2%;
+    
+}
+.category-container button{
+    width:fit-content ;
+    padding: 10px;
+    border: 2px solid #9400d3;
+    border-radius: 12px;
+    background-color:#9400d3;
+    color: #d3d3ff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.category-container button:hover
+{
+    border: 2px solid #bf2bff;
+    color: #b404ff;
+    background-color: #232323;
+}

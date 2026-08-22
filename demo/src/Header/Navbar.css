@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.main-content 
+{
+    padding: 20px;
+}
+body 
+{
+    background-color:#232323;
+    font-family: 'Poppins', sans-serif;
+}
+#cart
+{
+    background-color: #9400D3;
+    padding: 3px 5px;
+    border-radius: 35%;
+}
+#cart:hover
+{
+    background-color: #770fa4;
+    padding: 3px 5px;
+  
+}
+#menu
+{
+    display: none;
+}
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 9px 0px;
+    
+   
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+
+
+   
+}
+.logo
+{
+    color: #9400D3;
+    font-family: 'Lobster', cursive;
+    color: #9400D3;
+    cursor: pointer;
+}
+   .logo:hover
+    {
+        color: #d779ff; transition: .4s;
+    }
+.nav-links li{
+    margin: 0px 30px;
+    text-shadow: 1px 1px 3px black;
+}
+a{
+    color: #9400D3;
+    text-decoration: none;
+    font-size: large;
+    text-shadow: none;
+    font-weight: bold;
+   
+    /* background-color: #b86e19; */
+}
+a:hover{
+    color: #d779ff;
+}
+h2 a{
+    font-size: 22px;
+}
+
+@media all and (max-width:768px)
+{
+    nav .logo
+    {
+        position: relative;
+        right: 13%;
+    }
+    .logo {
+        font-family: 'Lobster', cursive;
+        color: #9400D3;
+        cursor: pointer;
+    }
+    .logo:hover
+    {
+         color: #770fa4;;
+         transition: .4s;
+    }
+    #cart
+    {
+        position: relative;
+        left: 21%;
+        background-color: #9400D3;
+        padding: 3px 5px;
+        border-radius: 35%;
+    }
+    #menu
+    {
+        display: block;
+        position: relative;
+        left: 10%;
+        transition: 0;
+        
+        
+    }
+    #menu a
+    {
+        color: #d3d3ff;
+        transition: 0;
+        background-color: #9400D3;
+        padding: 6px 10px;
+        border-radius: 35%;
+    }
+    #menu a:hover
+    {
+        background-color: #770fa4;
+        transition: .4s;
+    }
+    .nav-links {
+        display: block;
+        position:absolute;
+        top: 11%;
+        width: 100%;
+        text-align: center;
+        visibility: hidden;
+        border-top: 2px solid #9400D3;
+        border-bottom: 2px solid #9400D3;
+        background-color: #232323;
+      
+       
+    }
+    .nav-links li 
+    {
+        padding: 12px;
+       
+       
+    }
+    .nav-links.showMenu
+    {
+        visibility: visible;
+      
+    }
+    .nav-links li a {
+        color: #9400D3;
+        text-shadow: none;
+        font-weight: bold;
+    }
+    .nav-links li a:hover
+    {
+        color: #d779ff;
+       
+    }
+}

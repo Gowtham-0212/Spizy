@@ -1,0 +1,44 @@
+.banner
+{
+    width: 85%;
+    height: 70vh;
+    background-image:url("/hero.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 5% auto;
+    align-content:center;
+    text-align: center;
+}
+.ban-text
+{
+    color: #d3d3d3;
+    text-shadow: 2px 2px 5px #000000;
+    margin: 10px ;
+
+}
+
+.ban-button
+{
+  
+    color: #d3d3ff;
+    background-color: #9400d3;
+    border-radius: 60px;
+    padding: 7px 19px;
+    font-family: 'poppins';
+    border: 3px solid #d3d3ff;
+    font-weight: bold;
+}
+.ban-button:hover{
+    background-color:#232323;
+    color: #9400d3;
+    border: 3px solid #9400d3;
+    transition: .4s;
+}
+@media all and (max-width:768px) 
+{
+    .banner{
+        width: 95%;
+        height: 55vh;
+    }
+}
