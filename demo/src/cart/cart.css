@@ -104,3 +104,8 @@
 table td{
     border-top: 1px solid #000000;
 }
+table
+{
+    margin: 0px auto;
+    width: 90%;
+}
