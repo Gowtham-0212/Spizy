@@ -7,7 +7,7 @@
 }
 .main-content 
 {
-    padding: 20px;
+    padding:0px 7% ;
 }
 body 
 {
@@ -43,9 +43,6 @@ nav
 .nav-links{
     display: flex;
     list-style: none;
-
-
-   
 }
 .logo
 {
@@ -84,6 +81,10 @@ h2 a{
     {
         position: relative;
         right: 13%;
+    }
+    .main-content 
+    {
+        padding: 0px 25px;
     }
     .logo {
         font-family: 'Lobster', cursive;

@@ -1,7 +1,7 @@
 .container0
 {
     margin-top: 7%;
-    background-color: black;
+   
     width: 100%;
     color: #d3d3ff;
     display: flex;
@@ -17,3 +17,11 @@
 .container0 ul {list-style: none;font-size: 10px;}
 .container0 ul li{margin: 6px;}
 
+#subHead{font-family: 'Lobster', cursive;margin-bottom: 5px;color: #9400D3;}
+
+#fo{color: #d3d3ff;font-size: 9px;text-align: center;
+    background-color: black;margin-top: 10px;}
+
+footer{background-color: black;}
+
+#foot li{cursor: pointer;}

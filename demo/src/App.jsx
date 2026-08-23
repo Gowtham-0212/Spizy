@@ -4,7 +4,7 @@ import Category from './Categories/Category'
 import Hero from './hero/hero'
 import Offer from './offer/offer'
 import CartProvide from './cart/CartProvider'
-import Cart from './cart/Cart'
+import Cart from './cart/cart'
 import Footer from './footer/footer'
 
 import{BrowserRouter,Routes,Route} from 'react-router-dom'

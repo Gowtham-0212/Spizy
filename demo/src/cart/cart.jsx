@@ -10,14 +10,19 @@ function Cart() {
     const total = cart.reduce(
         (sum, item) => sum + item.price * item.quantity,
         0)
+
     const increaseQuantity = (id) => {
         setCart(cart.map((item) => item.id === id? 
                     { ...item, quantity: item.quantity + 1 }:item))}
 
     const decreaseQuantity = (id) => {
-        setCart(cart.map((item) =>
-                item.id === id? {...item,quantity: item.quantity > 1? 
-                        item.quantity - 1:1}:item))}
+    setCart( cart.map((item) =>
+                    item.id === id
+                        ? { ...item, quantity: item.quantity - 1 }
+                        : item  
+            ).filter((item) => item.quantity > 0)
+    )
+}
 
     return (
         <>
