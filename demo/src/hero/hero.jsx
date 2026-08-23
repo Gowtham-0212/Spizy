@@ -15,7 +15,7 @@ function Hero()
                     
             </div>
             <div className="banner-reviews">
-                <h2>Explore our menu</h2>
+                {/* <h2>Explore our menu</h2> */}
                 
             </div>
            
