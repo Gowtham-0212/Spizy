@@ -111,3 +111,19 @@ table
     margin: 0px auto;
     width: 90%;
 }
+@media (max-width: 600px) {
+    #bill-wrap {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #bill-wrap td,
+    #bill-wrap th {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
