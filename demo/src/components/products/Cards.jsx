@@ -14,7 +14,7 @@ function Cards(props) {
 
         setTimeout(() => {
             setMessage("");
-        }, 2000);
+        }, 1000);
     }
     
     return (

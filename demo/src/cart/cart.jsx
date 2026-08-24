@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "./CartProvider"
 import './cart.css'
+import {Link} from 'react-router-dom'
 
 
 function Cart() {
@@ -98,6 +99,8 @@ function Cart() {
                     <br />
                     <h3>To Pay: ₹{total}</h3>
                     <button id="bill">Proceed To Pay</button>
+                    <p className="note">Note: Payment can be done only if 
+                        you're logged in ...if not <Link to="/login">Click Here</Link> </p>
                 </div>)}
          
         </>
