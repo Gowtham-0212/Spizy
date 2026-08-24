@@ -127,6 +127,6 @@ table
         min-width: 500px;
     }
 }
-.note{text-align: center;width: 98%;}
+.note{text-align: center;width: 98%;background: none;}
 
 .note a{cursor: pointer;}
