@@ -42,3 +42,46 @@
         height: 55vh;
     }
 }
+.rev-cards
+{
+    width: 240px;
+    height: 270px;
+    flex: 0 0 240px;
+    /* background-color: #000000; */
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px rgb(5, 5, 5);
+   background: linear-gradient(135deg,#748b94,#9400d3,#748b94);
+}
+.rev-cards p{color: white;margin-top: 6px;
+    font-size: 15px;background: none;}
+.rev-cards img
+{
+    width: 85px;
+    border-radius: 50%;
+    margin: 8% 30% 2% ;
+}
+.rev-details
+{
+    text-align: center;
+    padding: 0px 5px;
+    color: #ffffff;
+}
+.reviews
+{
+      display: flex;
+    gap: 50px;
+    padding: 10vh 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.reviews::-webkit-scrollbar {
+    display: none;              
+}
+.ban-head
+{
+    margin: 1% 4%;
+    font-size: 45px;
+    color: #d3d3ff;
+}

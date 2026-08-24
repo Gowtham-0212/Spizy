@@ -12,7 +12,7 @@ function Categories({ selectedCategory, setSelectedCategory })
         { name: "Fried Chicken 🍗", value: "Fried Chicken" },
         { name: "Noodles 🍜", value: "Noodles" },
         { name: "Biriyani 🥘", value: "Biriyani" },
-        { name: "Clear Filter 🧹", value: "Clear" }
+        { name:"Desserts 🍰",value:"Desserts"}
     ];
 
     return (

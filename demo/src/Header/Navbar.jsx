@@ -24,7 +24,7 @@ function Navbar() {
                 <li><Link to="/" onClick={close}>Home</Link></li>
                 <li><Link to="/menu" onClick={close}>Menu</Link></li>
                 <li><Link to="/offers" onClick={close}>Offers</Link></li>
-                <li><Link to="/about" onClick={close}>About us</Link></li>
+                <li><a href="#about" onClick={close}>About us</a></li>
             </ul>
 
             <h2 id="cart">
@@ -32,7 +32,7 @@ function Navbar() {
             </h2>
 
             <h2 id="menu" onClick={show}>
-                <a href="#">{!showMenu?"☰":"X"}</a>
+                <button>{!showMenu?"☰":"X"}</button>
             </h2>
         </nav>
     )

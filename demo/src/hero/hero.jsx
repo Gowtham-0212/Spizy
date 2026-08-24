@@ -1,5 +1,7 @@
 import './hero.css'
 import {useNavigate} from 'react-router-dom'
+import Review from '../Data/Review'
+
 function Hero()
 
 {
@@ -14,9 +16,32 @@ function Hero()
                 </div>
                     
             </div>
-            <div className="banner-reviews">
-                {/* <h2>Explore our menu</h2> */}
-                
+
+            <br />
+            <hr />
+            <br />
+            
+            <h1 className='ban-head'>Hear It From Our Customers . . .</h1>
+            <div className="reviews">
+                {
+                Review.map(
+                    (item) => (
+                    <div className='rev-cards'>
+                        <img src={item.image} alt="" />
+                            <div className="rev-details">
+                                <h4>
+                                    {item.name} ~ ⭐ {item.rating}
+                                </h4>
+                                <p>
+                                    {item.opinion}
+                                </p>
+                            </div>
+                    </div>
+                        )
+                )
+                  
+                }
+              
             </div>
            
         </>

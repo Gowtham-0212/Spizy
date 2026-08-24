@@ -44,12 +44,12 @@ function Cart() {
                             <img src={item.img} alt={item.name} />
 
                             <div id="details">
-                                <h2>{item.name}</h2>
+                                <h3>{item.name}</h3>
                                 <p>Quantity: {item.quantity}</p>
 
                                  <div className="inner-details">
-                                    <h3 className="inc" onClick={()=>increaseQuantity(item.id)}>+</h3>
-                                    <h3 className="dec" onClick={()=>decreaseQuantity(item.id)}>-</h3>
+                                    <h3 id="inc" onClick={()=>increaseQuantity(item.id)}>+</h3>
+                                    <h3 id="dec" onClick={()=>decreaseQuantity(item.id)}>-</h3>
                                 </div>
                                
                             </div>

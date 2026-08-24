@@ -3,7 +3,6 @@ const data = [
         id: 1,
         name: "Chicken Biryani ",
         price: 170,
-        rating:4.3,
         img: "https://authenticroyal.com/wp-content/uploads/2024/10/royal-rice-may-220461.jpg",
         category: "Biriyani"
     },
@@ -62,7 +61,41 @@ const data = [
         rating:3.7,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzEIeGFBilwVH3Px9CxvFmncUgbw80yEDchTLk2g0lw&s=10",
         category: "Burger"
-    }
+    },
+    {
+        id: 9,
+        name: "Spizy'z pudding",
+        price: 139,
+        rating:3.7,
+        img: "https://www.recipetineats.com/tachyon/2025/09/Panna-cotta_8-close-up.jpg?resize=747%2C747",
+        category: "Desserts"
+    },
+    {
+        id: 10,
+        name: "Oreo Cup-Cake",
+        price: 89,
+        rating:3.7,
+        img: "https://images.immediate.co.uk/production/volatile/sites/30/2022/05/Chocolate-sandwich-cupcakes-4b30ada.jpg?quality=90&resize=708,643",
+        category: "Desserts"
+    },
+    {
+        id: 11,
+        name: "Paneer Tikka",
+        price: 139,
+        rating:3.7,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAdm621ql6a4bp4eBRJbuPTGjvPObNy9RE-PKi65DFxw&s=10",
+        category: "Fast Food"
+    },
+    {
+        id: 12,
+        name: "Chinese Ramen",
+        price: 299,
+        rating:3.7,
+        img: "https://tangerinezest.com/wp-content/uploads/2025/10/recette-ramen-poulet-facile-DSC_8990-scaled.jpg",
+        category: "Fast Food"
+    },
+
+
 ];
 
 export default data;

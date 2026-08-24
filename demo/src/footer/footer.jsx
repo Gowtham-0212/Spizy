@@ -7,7 +7,7 @@ function Footer()
 
     return(
         <>
-        <footer>
+        <footer id='about'>
              <div className="container0">
                 <div className="content">
                     <h2 id='subHead'>SPIZY</h2>
