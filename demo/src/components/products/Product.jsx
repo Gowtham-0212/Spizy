@@ -2,22 +2,35 @@ import Cards from "./Cards";
 import "./Card.css";
 import products from "../../Data/Data";
 
-function Products({ selectedCategory }) {
+function Products({ selectedCategory, choice }) {
 
-
-     if (selectedCategory===null || selectedCategory==="Clear" ) {
+    if (selectedCategory === null) 
+    {
         return null;
     }
-    const filtered =
-        selectedCategory=== "All"
-            ? products:products.filter((p) => p.category === selectedCategory);
 
-   
+    // by category
+    const categoryFiltered =
+        selectedCategory === "All"
+            ? products
+            : products.filter(
+                (product) =>
+                    product.category === selectedCategory
+            );
+
+    // by search text
+    const filteredProducts = categoryFiltered.filter((product) => {
+
+        return product.name
+            .toLowerCase()
+            .includes(choice.toLowerCase());
+
+    });
 
     return (
         <div className="container">
 
-            {filtered.map((product) => (
+            {filteredProducts.map((product) => (
                 <Cards
                     key={product.id}
                     id={product.id}

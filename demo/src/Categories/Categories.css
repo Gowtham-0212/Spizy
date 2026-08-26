@@ -4,7 +4,7 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    margin: 8% 5% ;
+    margin: 2% 5% ;
     padding: 0px 2%;
     
 }
@@ -24,4 +24,17 @@
     border: 2px solid #bf2bff;
     color: #b404ff;
     background-color: #232323;
+}
+.search
+{
+    text-align: center;
+    padding: 5%;
+}
+.input-box
+{
+    width: 70%;
+    padding: 7px 10px;
+    font-family: 'poppins',sans-serif;
+    border: 3px solid #9400d3;
+    border-radius: 12px;
 }
