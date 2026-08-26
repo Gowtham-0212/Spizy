@@ -34,9 +34,13 @@ function Cart() {
 
                 <h1 id="cart-txt">My Cart 🛒</h1>
 
-                {cart.length === 0 ? (<p id="empty">Your cart is empty...</p>):
-                    (
-                    <div id="container">
+                {cart.length === 0 ? <>
+                    <p id="empty">Your cart is empty...</p>
+                    <Link to="/menu" className="browsewrap">
+                        <button className="browse">Browse</button>
+                    </Link> </> :
+                    
+                    (<div id="container">
                         {
                             
                             cart.map((item, index) => (
