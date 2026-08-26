@@ -1,10 +1,11 @@
 import { useContext } from "react"
 import { CartContext } from "./CartProvider"
 import './cart.css'
-import {Link} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 
 
 function Cart() {
+    const navi=useNavigate()
 
     const { cart,setCart } = useContext(CartContext)
    
@@ -24,6 +25,10 @@ function Cart() {
             ).filter((item) => item.quantity > 0)
     )
 }
+function menuu()
+{
+    navi("/menu")
+}
 
     return (
         <>
@@ -36,9 +41,9 @@ function Cart() {
 
                 {cart.length === 0 ? <>
                     <p id="empty">Your cart is empty...</p>
-                    <Link to="/menu" className="browsewrap">
-                        <button className="browse">Browse</button>
-                    </Link> </> :
+                    <div className="browsewrap">
+                        <button className="browse" onClick={menuu}>Browse</button>
+                    </div> </> :
                     
                     (<div id="container">
                         {
