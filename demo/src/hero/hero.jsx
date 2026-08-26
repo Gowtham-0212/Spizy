@@ -21,7 +21,7 @@ function Hero()
             <hr />
             <br />
             
-            <h1 className='ban-head'>Hear It From Our Customers . . .</h1>
+            <h1 className='ban-head'>Hear It From Our Customers</h1>
             <div className="reviews">
                 {
                 Review.map(
