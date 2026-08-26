@@ -70,30 +70,33 @@ function Cart() {
                 <div id="bill-wrap">
                     <h2> Summary:</h2>
                     <br />
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>NO</th>
-                                <th>Name</th>
-                                <th>Qty</th>
-                                <th>Rs</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                              { cart.map((x,inde)=>(
-                                <tr key={x.id}>
-                                    <td>{inde + 1}</td>
-                                    <td>{x.name}</td>
-                                    <td>{x.quantity}</td>
-                                    <td>{x.price}</td>
-                                    <td>₹{x.quantity * x.price}</td>
+                    <div className="tb">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>Name</th>
+                                    <th>Qty</th>
+                                    <th>Rs</th>
+                                    <th>Total</th>
                                 </tr>
-                                 ))
-                              }
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+
+                                { cart.map((x,inde)=>(
+                                    <tr key={x.id}>
+                                        <td>{inde + 1}</td>
+                                        <td>{x.name}</td>
+                                        <td>{x.quantity}</td>
+                                        <td>{x.price}</td>
+                                        <td>₹{x.quantity * x.price}</td>
+                                    </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                   
                     
                 
                     <br />

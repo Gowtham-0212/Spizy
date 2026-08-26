@@ -73,6 +73,7 @@
     padding: 6% 0%;
     text-align: center;
     margin-top: 7%;
+    box-sizing: border-box;
 }
 #bill
 {
@@ -111,20 +112,28 @@ table
     margin: 0px auto;
     width: 90%;
 }
-@media (max-width: 600px) {
+.tb
+{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+@media (max-width: 768px) {
     #bill-wrap {
         width: 100%;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 
     #bill-wrap td,
     #bill-wrap th {
-        padding: 5px;
-        font-size: 14px;
+        padding: 0px;
+        font-size: 10px;
     }
 
     table {
-        min-width: 500px;
+        /* min-width: fit-content; */
+        min-width: -webkit-fill-available;
+        
     }
 }
 .note{text-align: center;width: 98%;background: none;}

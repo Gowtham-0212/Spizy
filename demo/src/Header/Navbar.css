@@ -145,9 +145,7 @@ h2 a{
         visibility: hidden;
         border-top: 2px solid #9400D3;
         border-bottom: 2px solid #9400D3;
-        background-color: rgb(30, 30, 30);
-      
-       
+        background-color: rgb(30, 30, 30); 
     }
     .nav-links li 
     {
@@ -170,5 +168,11 @@ h2 a{
     {
         color: #d779ff;
        
+    }
+}
+@media (max-width: 768px) {
+    .nav-links {
+       
+        top: 8%;
     }
 }
